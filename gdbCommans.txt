@@ -1,0 +1,31 @@
+compile without gdb:
+g++ --std=c++11 -o FileTester -Wall -pedantic-errors -Werror -DNDEBUG *.cpp Cards/*.cpp Players/*.cpp fileTests/*.cpp
+
+compile for gdb:
+g++ --std=c++11 -ggdb -o FileTester -Wall -pedantic-errors -Werror -DNDEBUG *.cpp Cards/*.cpp Players/*.cpp fileTests/*.cpp
+
+
+
+
+breakpoint:
+b main
+
+test X:
+set args fileTests/inFiles/testX.in fileTests/inFiles/testX.deck fileTests/outFiles/testX.result
+
+test 10:
+set args fileTests/inFiles/test10.in fileTests/inFiles/test10.deck fileTests/outFiles/test10.result
+///updated test10
+///updated test3
+
+updated:
+
+test10:
+mtmchkin.h
+mtmchkin.cpp
+merchant.cpp - in validateMerchantUserInput
+merchant.cpp - in applyEncounter
+//checkUserPlayerName - commented lines in SPRING(check name with prev names in m_players) - need to uncomment..
+
+test 3:
+in mtmchkin.cpp - takeNumOfPlayers (try and catch)
