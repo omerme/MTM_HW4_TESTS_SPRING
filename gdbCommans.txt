@@ -29,3 +29,8 @@ merchant.cpp - in applyEncounter
 
 test 3:
 in mtmchkin.cpp - takeNumOfPlayers (try and catch)
+
+test 63:
+in mtmchkin.cpp - void Mtmchkin::createDeck(const std::string &fileName)
+comment line 228: ///if (trimmedString.empty()){} ///update test 63
+

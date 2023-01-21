@@ -225,8 +225,8 @@ void Mtmchkin::createDeck(const std::string &fileName)
         countWordsAndRemoveDuplicateSpaces(trimmedString); ///omer 18.1: why to remove spaces? a line like: "Ma na" is legal? also what about newline? didn't understand. --> You are correct - I changed the code
 
         //If there is some newline, we simple move to the next line
-        if (trimmedString.empty()){}
-        else if (!cardStringValid(trimmedString))
+        ///if (trimmedString.empty()){} ///update test 63
+        if (!cardStringValid(trimmedString))
         {
             throw DeckFileFormatError(currentLineCount); ///omer 18.1: currentLineCount used here
         }
